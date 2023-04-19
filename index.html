@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop the button</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <h1>THE EVASIVE BUTTON</h1>
+    <p>No input or an invalid one makes the button evasive. Name is a minimum of three characters. Email should be in a valid format .i.e. aba@gmail.com or ata.hag@gmail.com. Password should be a minimum of 8 characters with at least one of each of a small letter, a capital letter, a special character and a number. For touch screen users, click the button. For users with pointing devices, hover the cursor over the button.</p>
+
+    <form action="">
+        <label for="username">Username</label><br>
+        <input type="text" name="Username" id="username" placeholder="Enter your username" oninput="checkUsername()" on><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="Email" id="email" placeholder="Enter your Email" oninput="checkEmail()"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="Password" id="password" placeholder="Enter your password" oninput="checkPassword()"><br>
+        <div class="submit-cont">
+            <button type="submit" class="submit" onclick="congrats(event)" id="confetti">Submit</button>
+        </div>
+    </form>
+
+    <div class="congrats">Congratulations!!!</div>
+
+    <script src="jquery-3.6.1.js"></script>
+    <script src="confetti.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
